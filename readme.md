@@ -1,5 +1,5 @@
 # Contador Display 7 Segmentos - MicroControlador 8051
-
+![](https://github.com/TC071/Contador8051uC/blob/main/assets/demo.gif)
 
 
 ## Projeto
