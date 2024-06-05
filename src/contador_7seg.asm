@@ -28,13 +28,13 @@ CONT6:		DS			1		;EQUIVALE 27H
 CONT7:		DS			1		;EQUIVALE 28H
 
 ;----------CONSTANTE-----------------------------
-			FREQ		EQU			60000
+			FREQ		EQU			60000 ; Estouro em 65535
 
-;----------END. DE INTERRUP�OES------------------
+;----------END. DE INTERRUP�OES------------------
 			CSEG		AT	0H
 			JMP			BOOT
 
-			CSEG		AT	0BH
+			CSEG		AT	0BH		; Interrupção do Timer0
 			MOV			TL0,#LOW	FREQ
 			MOV			TH0,#HIGH	FREQ
 			JMP			DISPLAY_MUX
